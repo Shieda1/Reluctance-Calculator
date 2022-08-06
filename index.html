@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reluctance Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="reluctanceRadio" name="variables" checked>
+  <label for="reluctanceRadio">Reluctance</label>
+
+  <input type="radio" id="circuitLengthRadio" name="variables">
+  <label for="circuitLengthRadio">Circuit Length</label>
+
+  <input type="radio" id="relativeMagneticPermeabilityRadio" name="variables">
+  <label for="relativeMagneticPermeabilityRadio">Relative Magnetic Permeability</label>
+
+  <input type="radio" id="circuitsCrosssectionalAreaRadio" name="variables">
+  <label for="circuitsCrosssectionalAreaRadio">Circuit's Cross-sectional Area</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">(I) Circuit Length (m)</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">(μr) Relative Magnetic Permeability</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">(A) Circuit's Cross-sectional Area (m²)</label>
+  <input type="number" id="v3"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
